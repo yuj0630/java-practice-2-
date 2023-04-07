@@ -1,4 +1,4 @@
-package sec04.sec04.exam06;
+package sec04.exam06;
 
 import java.util.HashMap;
 import java.util.Iterator;
@@ -38,10 +38,17 @@ public class HashMapExample {
         Set<Map.Entry<String, Integer>> entrySet = map.entrySet();
         Iterator<Map.Entry<String, Integer>> entryIterator = entrySet.iterator();
 
+        //반복해서 키와 값 얻기
         while(entryIterator.hasNext()){
             Map.Entry<String, Integer> entry = entryIterator.next();
-            System
+            String key = entry.getKey();
+            Integer value = entry.getValue();
+            System.out.println("\t" + key + " : " + value);
         }
-        Set<Map.Entry<String, Integer>> entry = entryIterator.next();
+        System.out.println();
+
+        // 객체 전체 삭제
+        map.clear();
+        System.out.println("총 Entry 수 = " + map.size());
     }
 }

@@ -1,2 +1,4 @@
-package sec01.exam10;public class ClassExample {
+package sec01.exam10;
+
+public class ClassExample {
 }
